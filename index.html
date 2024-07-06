@@ -28,9 +28,7 @@
 
         .flex-container{
             display: flex; 
-            background-color: #006a6a;
-            justify-content: space-around;    
-            padding: 20px;   
+            justify-content: space-around; 
         }
 
         .header-title {
@@ -46,10 +44,61 @@
             font-weight: 600;
             margin-bottom: 15px;
         }
+
+        .col-1 {
+            background-color: #006a6a;
+            width: 50%;
+            padding: 20px;
+            color: #fff;
+        }
+
+        .col-2 {
+            background-color: #009d8d;
+            width: 50%;
+            padding: 20px;
+            color: #fff;
+        }
+
+        .subscription-title {
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .price {
+            font-size: 25px;
+            font-weight: 700;
+        }
+
+        .month {
+            font-size: 15px;
+            font-style: italic;
+            padding-left: 15px;
+        }
+
+        .button {
+            margin-top: 20px;
+            width: 100%;
+            padding: 15px 32px;
+
+            color: #006a6a;
+            background-color: #cccccc;
+
+            font-size: 16px;
+
+            border-radius: 4px;
+            border: none;
+
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #e9e9e9;
+        }
     </style>
 
-
 </head>
+
 <body>
     <div class = "container">
         <div class = "header">
@@ -64,12 +113,42 @@
             Tenha suporte da nossa equipe e cresça mais rápido na sua carreira.
         </div>
     </div>    
-        <div class ="flex-container">
-            <div>
-                Coluna 1
+        <div class = "flex-container">
+            <div class = "col-1">
+                <div class = "subscription-title">
+                    Assinatura mensal:
+                </div>
+
+                <div>
+                    <span class = "price">R$ 99,99</span> 
+                    <span class = "month">por mês.</span>
+                </div>
+
+                <div>
+                    Cancele a qualquer momento.
+                </div>
+
+                <button class = "button">Assine Agora</button>
+
             </div>
-            <div>
-                Coluna 2
+
+            <div class = "col-2">
+                <div>
+                    Icone
+                </div>
+
+                <div>
+                    Você terá acesso:
+                </div>
+
+                <div>
+                    .Projetos exclusivos
+                    .Tutoriais
+                    .Lives Semanais
+                    .Material didático especializado
+                    .Fórum
+                    .Ofertas de empregos
+                </div>
             </div>
         </div>
     </div>
